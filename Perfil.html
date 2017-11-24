@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <title>Geolearn</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="js.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.close').click(function() {
+                $('.ad').css('display', 'none');
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="logo">
+            <a href="Index.html"><img src="Imagenes/logo.png" alt="" width="160px" height="38px"></a>
+        </div>
+
+        <div class="idioma">
+            <a href=""><img src="Imagenes/idio.png" alt="" width="30px" height="40px"></a>
+            <a href="BasicoA.html"><span id="japo">Japonés - Básico</span></a>
+            <a href=""><img src="Imagenes/botonPremiun.png" alt="" width="126px" height="21px"></a>
+        </div>
+
+        <div class="user">
+            <img src="Imagenes/puntaje.png" alt="" width="65px" height="23px" class="punt">
+            <a href=""><img src="Imagenes/notiChat.png" alt="" width="21px" height="21px"></a>
+            <a href=""><img src="Imagenes/notifi.png" alt="" width="14px" height="17px"></a>
+            <a href="Perfil.html"><img src="Imagenes/user.png" alt="" width="137px" height="45px"></a>
+        </div>
+        <a href="#" class="nav-trigger"><span></span></a>
+    </div>
+
+    <div class="side-nav">
+        <div class="logo">
+            <a href="Index.html"><img src="Imagenes/logo.png" alt="" width="160px" height="38px" id="logo"></a>
+            <a href="Index.html"><img src="Imagenes/ico.png" alt="" id="login"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Lecciones.html">
+							<span><img src="Imagenes/icoLecc.png" alt="" width="21px"></span>
+							<span>Lecciones</span>
+						</a>
+                    <ul>
+                        <li><a href="BasicoA.html"><span class="submenu">Básico A</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Básico B</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Intermedio A</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Intermedio B</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Avanzado</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoChat.png" alt="" width="21px"></span>
+							<span>Chat</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoAyu.png" alt="" width="21px"></span>
+							<span>Ayuda / Foro</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoCult.png" alt="" width="21px"></span>
+							<span>Cultura</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoRank.png" alt="" width="21px"></span>
+							<span>Ranking</span>
+						</a>
+                </li>
+                <li>
+                    <a href="Perfil.html">
+							<span><img src="Imagenes/icoUser.png" alt="" width="21px"></span>
+							<span>Perfil</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoPrem.png" alt="" width="21px"></span>
+							<span>Hazte Premium</span>
+						</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+        <footer>
+            <div class="text-center center-block">
+                <p class="txt-railway">- Redes -</p>
+                <br />
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="main-content">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="perfil">
+                    <div class="user-descrip">
+                        <div class="foto">
+                            <img src="Imagenes/fotoUser.png" alt="" width="70%">
+                        </div>
+
+                        <div class="nombre">
+                            <span>
+                         <h2>Jhonatan Stiven Rios Villa</h2>
+                           <h3 class="italic">Aprendo: Japonés</h3>
+                           <h4>
+                               Nivel: Básico A
+                           </h4>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="terminado">
+                        <div class="nombre">
+                            <span>
+                             <h2>Actividad Reciente
+                                </h2>
+                            </span>
+                        </div>
+
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci1.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Saludar</h2>
+                            <h3 class="italic-text">Completado</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci2.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Números</h2>
+                            <h3 class="italic-text">Completado</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci3.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Colores</h2>
+                            <h3 class="italic-text">Completado</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci4.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Cuerpo</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci5.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Animales</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci6.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Lugares</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci7.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Preposicio...</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci8.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Lugares</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci9.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Comida</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+                        </div>
+                        <div class="ct">
+                            <div class="lecci">
+                                <img src="Imagenes/lecci10.png" alt="" width="60px">
+                            </div>
+                            <h2 class="text-lecc">Presente</h2>
+                            <h3 class="italic-text">Incompleto</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="puntajes">
+                    <div class="ranking">
+                        <div class="categori">
+                            <img src="Imagenes/rank.png" alt="" width="49px">
+                            <span>
+                         <h2 class="nombre">Ranking</h2>
+                           <h3 class="punta">Puntos: 300</h3>
+                            </span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="users">
+                            <div class="puesto">
+                                <h5 class="nom">1</h5>
+                            </div>
+                            <div class="fot">
+                                <img src="Imagenes/userRan.png" alt="" width="50px">
+                            </div>
+
+                            <h5 class="nom">Daniel Corrales</h5>
+
+                            <h5 class="ui">380</h5>
+                        </div>
+                        <div class="line"></div>
+                        <div class="users" style="background: rgba(85, 99, 112, 0.2);">
+                            <div class="puesto">
+                                <h5 class="nom">2</h5>
+                            </div>
+                            <div class="fot">
+                                <img src="Imagenes/userRan.png" alt="" width="50px">
+                            </div>
+                            <h5 class="nom">Tú</h5>
+                            <h5 class="ui">300</h5>
+                        </div>
+                        <div class="line"></div>
+                        <div class="users">
+                            <div class="puesto">
+                                <h5 class="nom">3</h5>
+                            </div>
+                            <div class="fot">
+                                <img src="Imagenes/userRan.png" alt="" width="50px">
+                            </div>
+
+                            <h5 class="nom">Ilian Londoño</h5>
+
+                            <h5 class="ui">250</h5>
+                        </div>
+                        <div class="line"></div>
+                        <div class="users">
+                            <div class="puesto">
+                                <h5 class="nom">4</h5>
+                            </div>
+                            <div class="fot">
+                                <img src="Imagenes/userRan.png" alt="" width="50px">
+                            </div>
+
+                            <h5 class="nom">Ana Burbano</h5>
+
+                            <h5 class="ui">100</h5>
+                        </div>
+                    </div>
+                    <div class="diplomas">
+                        <div class="categori">
+                            <h2 class="nombre">Diplomas</h2>
+                        </div>
+                        <div class="line"></div>
+                        <div class="diplo">
+                            <div class="basi">
+                                <img src="Imagenes/diplot.png" alt="" width="57px">
+                                <span>
+                                <h2>Básico</h2>
+                                </span>
+                            </div>
+
+                            <div class="basi">
+                                <img src="Imagenes/diplof.png" alt="" width="57px">
+                                <span>
+                                <h2>Intermedio</h2>
+                                </span>
+                            </div>
+                            <div class="basi">
+                                <img src="Imagenes/diplof.png" alt="" width="57px">
+                                <span>
+                                <h2>Avanzado</h2>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

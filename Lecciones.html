@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <title>Geolearn</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="js.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.close').click(function() {
+                $('.ad').css('display', 'none');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <a href="Index.html"><img src="Imagenes/logo.png" alt="" width="160px" height="38px"></a>
+        </div>
+
+        <div class="idioma">
+            <a href=""><img src="Imagenes/idio.png" alt="" width="30px" height="40px"></a>
+            <a href="BasicoA.html"><span id="japo">Japonés - Básico</span></a>
+            <a href=""><img src="Imagenes/botonPremiun.png" alt="" width="126px" height="21px"></a>
+        </div>
+
+        <div class="user">
+            <img src="Imagenes/puntaje.png" alt="" width="65px" height="23px" class="punt">
+            <a href=""><img src="Imagenes/notiChat.png" alt="" width="21px" height="21px"></a>
+            <a href=""><img src="Imagenes/notifi.png" alt="" width="14px" height="17px"></a>
+            <a href="Perfil.html"><img src="Imagenes/user.png" alt="" width="137px" height="45px"></a>
+        </div>
+        <a href="#" class="nav-trigger"><span></span></a>
+    </div>
+
+    <div class="side-nav">
+        <div class="logo">
+            <a href="Index.html"><img src="Imagenes/logo.png" alt="" width="160px" height="38px" id="logo"></a>
+            <a href="Index.html"><img src="Imagenes/ico.png" alt="" id="login"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Lecciones.html">
+							<span><img src="Imagenes/icoLecc.png" alt="" width="21px"></span>
+							<span>Lecciones</span>
+						</a>
+                    <ul>
+                        <li><a href="BasicoA.html"><span class="submenu">Básico A</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Básico B</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Intermedio A</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Intermedio B</span></a></li>
+                        <li><a href="BasicoA.html"><span class="submenu">Avanzado</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoChat.png" alt="" width="21px"></span>
+							<span>Chat</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoAyu.png" alt="" width="21px"></span>
+							<span>Ayuda / Foro</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoCult.png" alt="" width="21px"></span>
+							<span>Cultura</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoRank.png" alt="" width="21px"></span>
+							<span>Ranking</span>
+						</a>
+                </li>
+                <li>
+                    <a href="Perfil.html">
+							<span><img src="Imagenes/icoUser.png" alt="" width="21px"></span>
+							<span>Perfil</span>
+						</a>
+                </li>
+                <li>
+                    <a href="#">
+							<span><img src="Imagenes/icoPrem.png" alt="" width="21px"></span>
+							<span>Hazte Premium</span>
+						</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+        <footer>
+            <div class="text-center center-block">
+                <p class="txt-railway">- Redes -</p>
+                <br />
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="main">
+
+                    <div>
+                        <div class="bienve">
+                            <spam>
+                                <h3 class="bien">¡Bienvenid@ a GeoLearn Jhonatan Rios!</h3>
+                            </spam>
+                            <div>
+                                <div class="boton">Iniciar Recorrido</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="title">
+                            <h2 class="titu"><a href="BasicoA.html">Básico A</a></h2>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                    30% Completo
+                                </div>
+                            </div>
+                            <div class="mas">
+                                <img src="Imagenes/masLecc.png" alt="" width="10px" height="5px">
+                            </div>
+                        </div>
+                        <div class="leccion">
+                            <img src="Imagenes/left.png" alt="" width="15px" height="25px">
+                            <a href=""><img src="Imagenes/bA1.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci2"><img src="Imagenes/bA2.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci3"><img src="Imagenes/bA3.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci4"><img src="Imagenes/bA4.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <img src="Imagenes/right.png" alt="" width="15px" height="25px">
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="title">
+                            <h2 class="titu"><a href="perfil.html">Básico B</a></h2>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:8%">
+                                    0%
+                                </div>
+                            </div>
+                            <div class="mas">
+                                <img src="Imagenes/masLecc.png" alt="" width="10px" height="5px">
+                            </div>
+                        </div>
+                        <div class="leccion">
+                            <img src="Imagenes/left.png" alt="" width="15px" height="25px">
+                            <a href=""><img src="Imagenes/bB1.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci2"><img src="Imagenes/bB2.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci3"><img src="Imagenes/bB3.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci4"><img src="Imagenes/bB4.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <img src="Imagenes/right.png" alt="" width="15px" height="25px">
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="title">
+                            <h2 class="titu"><a href="perfil.html">Intermedio A</a></h2>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:8%">
+                                    0%
+                                </div>
+                            </div>
+                            <div class="mas">
+                                <img src="Imagenes/masLecc.png" alt="" width="10px" height="5px">
+                            </div>
+                        </div>
+                        <div class="leccion">
+                            <img src="Imagenes/left.png" alt="" width="15px" height="25px">
+                            <a href=""><img src="Imagenes/iA1.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci2"><img src="Imagenes/iA2.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci3"><img src="Imagenes/iA3.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <a href="" id="lecci4"><img src="Imagenes/iA4.png" alt="" width="160px" height="237px" class="uni"></a>
+                            <img src="Imagenes/right.png" alt="" width="15px" height="25px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
