@@ -525,7 +525,7 @@ h4 {
 
 @media screen and (min-width: 600px) {
     .header {
-        background-color: #FFF;
+        background-color: #dcdfe2;
         z-index: 1;
     }
     .header .logo {
